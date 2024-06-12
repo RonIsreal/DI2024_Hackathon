@@ -1,4 +1,18 @@
-.add-task {
+@font-face {
+  font-family: 'Chillax-Light';
+  src: url('C:/Users/Ronny/Desktop/Python React 2024/Hackathon/DI2024_Hackathon/Fonts/WEB/fonts/Chillax-Light.woff2') format('woff2'),
+       url('C:/Users/Ronny/Desktop/Python React 2024/Hackathon/DI2024_Hackathon/Fonts/WEB/fonts/Chillax-Light.woff') format('woff'),
+       url('C:/Users/Ronny/Desktop/Python React 2024/Hackathon/DI2024_Hackathon/Fonts/WEB/fonts/Chillax-Light.ttf') format('truetype');
+       font-weight: 300;
+       font-display: swap;
+       font-style: normal;
+}
+
+body { 
+    font-family: 'Chillax-Light', sans-serif; 
+    text-align: center; 
+}
+#add-task {
   background-color: #3498db;
   color: #fff;
   border: none;
@@ -9,6 +23,33 @@
 }
 
 
-.add-task:hover {
+#add-task:hover {
   background-color: #2980b9;
+}
+
+#task {
+  border: none;
+  background-color: transparent;
+  border-bottom: black;
+}
+
+.delete {
+  border-radius: 100%;
+  size: 80%;
+  background-color: rgb(255, 153, 153);
+}
+
+.delete:hover {
+  cursor: pointer;
+}
+
+.tasklist {
+  background-image: url('tasksbg.png');
+  background-size: 100% 100%;
+  display: grid;
+  justify-content: center;
+  margin-left: 600px;
+  margin-right: 600px;
+  align-items: center;
+  border: 4mm ridge rgba(0, 139, 139, .6);
 }

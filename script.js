@@ -1,7 +1,8 @@
 const taskInput = document.getElementById("task");
 const addButton = document.getElementById("add-task");
 const taskList = document.getElementById("tasks");
-
+const checkbox = document.getElementById("checkbox"); 
+const textToCross = document.getElementById("task"); 
 
 // Event Listeners
 addButton.addEventListener("click", addTask);
@@ -20,7 +21,7 @@ function addTask() {
   if (taskText.trim() !== "") {
       const newTask = document.createElement("li");
       newTask.innerHTML = `
-          ${taskText} <button class="delete">Delete</button>
+         ${taskText} <button class="delete">X</button>
       `;
       taskList.appendChild(newTask);
       taskInput.value = "";
